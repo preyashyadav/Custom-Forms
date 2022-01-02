@@ -7,6 +7,10 @@
     <title>Custom Form</title>
     <link href="main.css" rel="stylesheet">
     <script src="main.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
 </head>
 <body>
     <form>
@@ -14,26 +18,24 @@
         <span>What kind of input field you require?</span>
 
         <div class="dropDown">
-          <!-- <input type="button" value="Short Answer" onclick="EnableDisableTextBox(this)"/> -->
-        <input type="button" value="Short Answer" onclick="myText()" />
-        <input type="button" value="Paragraph" onclick="myTextArea()"/>
-        <input type="button" value="Check Box" onclick="myCheckBox()"/>
-        <!-- <input type="button" value="Clear choices"/> -->
-        <div id="text"  style="display: none";>
-            Textbox:
-            <input type="text" id="textId">
+            <!-- <input type="button" value="Short Answer" onclick="EnableDisableTextBox(this)"/> -->
+            <input type="button" value="Short Answer" onclick="myText()" />
+            <input type="button" value="Paragraph" onclick="myTextArea()"/>
+            <input type="button" value="Check Box" onclick="myCheckBox()"/>
+            <!-- <input type="button" value="Clear choices"/> -->
+            <div id="text"  style="display: none";>
+                Textbox:
+                <input type="text" id="textId">
+            </div>
+            <div>
+                <textarea id="textArea" rows="4" cols="50" style="display: none" ;>
+                </textarea>
+            </div>
+            <div id="checkBox" style="display: none";>
+                Check Box:
+                <input type="checkbox" id="checkBoxId"  />
+            </div>  
         </div>
-        <div id="textArea" style="display: none";>
-            Text Area:
-            <input type="textarea" id="textAreaId" />
-        </div>
-        <div id="checkBox" style="display: none";>
-            Check Box:
-            <input type="checkbox" id="checkBoxId"  />
-        </div>  
-        </div>
-        
-        
     </form>
 </body>
 </html>
