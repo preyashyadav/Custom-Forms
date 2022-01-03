@@ -33,9 +33,9 @@ function myCheckBox(){
 }
 
 
-document.getElementById("newsectionbtn").onclick = function() {
-  var tile = document.getElementById("tile");
-  var section = document.getElementById("mainsection");
-  tile.appendChild(section.cloneNode(true));
-}
+// document.getElementById("newsectionbtn").onclick = function() {
+//   var tile = document.getElementById("tile");
+//   var section = document.getElementById("mainsection");
+//   tile.appendChild(section.cloneNode(true));
+// }
 
