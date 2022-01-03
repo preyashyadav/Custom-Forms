@@ -13,27 +13,26 @@
 <body>
     <form>
 
-        <span>What kind of input field you require?</span>
-
-        <div class="dropDown">
-            <!-- <input type="button" value="Short Answer" onclick="EnableDisableTextBox(this)"/> -->
-            <input type="button" value="Short Answer" onclick="myText()" />
-            <input type="button" value="Paragraph" onclick="myTextArea()"/>
-            <input type="button" value="Check Box" onclick="myCheckBox()"/>
-            <!-- <input type="button" value="Clear choices"/> -->
-            <div id="text"  style="display: none";>
-                Textbox:
-                <input type="text" id="textId">
-            </div>
-            <div>
-                <textarea id="textArea" rows="4" cols="50" style="display: none" ;>
-                </textarea>
-            </div>
-            <div id="checkBox" style="display: none";>
-                Check Box:
-                <input type="checkbox" id="checkBoxId"  />
-            </div>  
-        </div>
+        <div id="tile">
+            <button id="newsectionbtn">+New Section</button>
+            <section id="mainsection">
+              <table>
+                <thead>
+                  <tr>
+                  <th>Field 1</th>
+                  <th>Field 2</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="text" name="f1" /></td>
+                    <td><input type="text" name="f2" /></td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </div>
+          
     </form>
 </body>
 </html>
