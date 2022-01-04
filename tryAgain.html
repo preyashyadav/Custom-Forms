@@ -19,10 +19,13 @@
 </head>
 <body>
     <from>
-        <div class="duplicate">
+        <!-- <div class="duplicate">
             <button id="dup">Add </button>
-        </div>
+        </div> -->
         <!-- tile 1 -->
+        <div id="container">
+            <button id="newsectionbtn">+New Section</button>
+            <section id="mainsection">
                 <tile>
                     <input type="text" id="question" placeholder="Untitled Question"/>
                     <div class="dropdown">
@@ -50,17 +53,27 @@
                         </div>  
                     </div>
                 </tile>
+            </section>
+            </div>
     </from>
 
 
 <!--  java script -->
 
-<script>
+<!-- <script>
     $(document).ready(function(){
        $document.getElementById("dup").click(function(){
           $("tile").clone().appendTo("body");
        });
     });
+</script> -->
+
+<script>
+    document.getElementById("newsectionbtn").onclick = function() {
+    var container = document.getElementById("container");
+    var section = document.getElementById("mainsection");
+    container.appendChild(section.cloneNode(true));
+}
 </script>
 
 
